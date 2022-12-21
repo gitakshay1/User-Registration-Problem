@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome User Regidtrsion \n1 Enter First Name \n2 Enter Last Name" +
-                "\n3 Enter Email Id \n4 Enter Mobile Number");
+            Console.WriteLine("Welcome User Regidtrsion \n1 For Enter First Name \n2 For Enter Last Name" +
+                "\n3 For Enter Email Id \n4 For Enter Mobile Number \n5 For Enter Password");
             int Choice=Convert.ToInt32(Console.ReadLine());
             switch(Choice)
             {
@@ -24,6 +24,10 @@
                 case 4:
                     Mobile_Number mobile_Number = new Mobile_Number();
                     mobile_Number.MobileNumber();
+                    break;
+                case 5:
+                    Password password = new Password();
+                    password.pass();
                     break;
                 default:
                     Console.WriteLine("Enter valid choice");
